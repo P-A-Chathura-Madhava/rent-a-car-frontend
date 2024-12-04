@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
+import HomePage from "@/ui-core/templates/pages/HomePage";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Rent a Car Application</h1>
-      <Button>Click Me</Button>
-    </main>
+    <HomePage />
   );
 }
