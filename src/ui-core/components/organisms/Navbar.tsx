@@ -3,7 +3,7 @@ import NavbarItems from "../molecules/NavbarItems"
 
 function Navbar() {
   return (
-    <div className="h-[60px] bg-slate-100 w-full flex items-center justify-between px-20">
+    <div className="h-[60px] bg-slate-100 w-full flex items-center justify-between px-20 font-poppins">
         <LogoImage />
         <NavbarItems />
     </div>
