@@ -6,7 +6,7 @@ import WebButton from "../components/atoms/WebButton";
 
 function WelcomeSection() {
   return (
-    <div className="container mx-auto flex mt-44 font-poppins">
+    <div className="container mx-auto flex mt-44 font-poppins" id="home">
         <div className="w-1/2 flex flex-col gap-4 justify-center items-center pl-20 pr-14">
             <Title />
             <div>

@@ -58,7 +58,7 @@ const cars: any = [
 
 function FeaturedCars() {
   return (
-    <div className="container mx-auto flex font-poppins mt-20 items-center flex-col">
+    <div className="container mx-auto flex font-poppins mt-20 items-center flex-col" id="cars">
       <h2 className="text-3xl font-bold">Explore Our Top Deals</h2>
       <div className="w-1/2">
         <Carousel

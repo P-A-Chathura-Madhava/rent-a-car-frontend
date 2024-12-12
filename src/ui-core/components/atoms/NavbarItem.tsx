@@ -3,7 +3,7 @@ import Link from "next/link"
 function NavbarItem({...props}) {
   return (
     <div className="font-bold hover:text-blue-600 transition-all duration-300 cursor-pointer">
-        <Link href={"/"}>{props.title}</Link>
+        <a href={`#${props?.target}`}>{props.title}</a>
     </div>
   )
 }

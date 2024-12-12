@@ -3,7 +3,7 @@ import suvImage from "/public/suv.png";
 
 function AboutUsSection() {
   return (
-    <div className="container mx-auto flex font-poppins px-12 mt-32 gap-12">
+    <div className="container mx-auto flex font-poppins px-12 mt-32 gap-12" id="aboutus">
       <div className="w-1/2">
         <Image src={suvImage} alt="suv-image" />
       </div>
