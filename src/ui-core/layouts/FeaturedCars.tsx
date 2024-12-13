@@ -16,6 +16,8 @@ import { Button } from "@/components/ui/button";
 import { BiSolidTachometer } from "react-icons/bi";
 import { FaEllipsisH } from "react-icons/fa";
 import { FaFillDrip } from "react-icons/fa";
+import {motion, useInView} from "framer-motion";
+import { useRef } from "react";
 
 const cars: any = [
   {
@@ -57,8 +59,17 @@ const cars: any = [
 ];
 
 function FeaturedCars() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
-    <div className="container mx-auto flex font-poppins mt-20 items-center flex-col" id="cars">
+    <motion.div 
+    className="container mx-auto flex font-poppins mt-20 items-center flex-col" id="cars"
+    ref={ref}
+    initial={{opacity: 0, y: 100}}
+    animate={isInView ? {opacity: 1, y: 0} : {opacity: 0, y: 100}}
+    transition={{duration: 1}}
+    >
       <h2 className="text-3xl font-bold">Explore Our Top Deals</h2>
       <div className="w-1/2">
         <Carousel
@@ -128,7 +139,7 @@ function FeaturedCars() {
           <CarouselNext />
         </Carousel>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

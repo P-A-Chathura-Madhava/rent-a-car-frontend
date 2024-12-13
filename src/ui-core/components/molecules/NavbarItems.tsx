@@ -1,4 +1,3 @@
-import Link from "next/link"
 import NavbarItem from "../atoms/NavbarItem"
 
 function NavbarItems() {

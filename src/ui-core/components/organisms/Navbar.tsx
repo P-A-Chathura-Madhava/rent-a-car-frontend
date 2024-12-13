@@ -21,7 +21,7 @@ function Navbar() {
   }, [])
   return (
     <div className={`h-[60px] w-full flex items-center justify-between px-20 font-poppins fixed top-0 z-40 transition-all duration-300 ${header ? "bg-slate-400 bg-opacity-80 text-white" : "bg-slate-100"}`}>
-        <LogoImage />
+        <LogoImage {...{header}} />
         <NavbarItems />
     </div>
   )
