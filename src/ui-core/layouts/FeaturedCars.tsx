@@ -87,7 +87,7 @@ function FeaturedCars() {
           <CarouselContent className="-ml-4 p-6 flex">
             {cars.map((item: any, index: number) => {
               return (
-                <CarouselItem className="basis-1/3 rounded-md shadow-3xl py-2 mr-6">
+                <CarouselItem className="basis-1/3 rounded-md shadow-3xl py-2 mr-6" key={index}>
                   <div className="p-3 w-[200px]">
                     <div className="flex flex-col items-center">
                       <div className="h-[130px]">
